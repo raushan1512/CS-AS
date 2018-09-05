@@ -66,3 +66,54 @@ if timepassed< 24 :
     print(time + timepassed)
     if (time + (timepassed % 24)) > 24 :
         print(((time + (timepassed % 24)) - 24))
+        
+CHAPTER 3
+
+EXERCISE 1 
+
+for f in range (1000) :
+    f = "We like Python's Turtles"
+    print(f)
+
+EXERCISE 2
+
+for f in  ("January","February","March","April","May","June","July","August", "September","October","November", "December"):
+   invite = "One of the months opf the year are " + f + " "
+   print(invite)
+   
+EXERCISE 3
+
+import turtle
+
+wn = turtle.Screen()
+
+tess = turtle.Turtle()
+
+tess.left(3645)
+
+wn.mainloop()
+
+EXERCISE 4 
+
+
+
+EXERCISE 11
+
+import turtle
+wn = turtle.Screen()
+wn.bgcolor("lightgreen")
+wn.title("Hello, Tess!")
+
+tess = turtle.Turtle()
+tess.color("red")
+tess.shape("turtle")
+tess.pensize(2.5)
+
+for i in range (5):
+    tess.forward(500)
+    tess.left(144)
+
+wn.mainloop()
+
+
+
