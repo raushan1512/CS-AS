@@ -1,0 +1,82 @@
+Example 1
+
+import turtle
+
+def draw_square(t, sz):
+
+     for i in range(4):
+        t.forward(sz)
+        t.left(90)
+
+
+wn = turtle.Screen()
+bob = turtle.Turtle()
+wn.bgcolor("lightblue")
+wn.title("Alex meets a function")
+bob.color("red")
+bob.shape("turtle")
+
+draw_square(bob, 50)
+wn.mainloop()
+
+Exercise 1 
+
+import turtle
+
+def draw_square(t, sz):
+
+     for i in range(4):
+        t.forward(sz)
+        t.left(90)
+
+
+wn = turtle.Screen()
+bob = turtle.Turtle()
+wn.bgcolor("lightblue")
+wn.title("Saurav is a function")
+bob.color("red")
+bob.shape("turtle")
+bob.pensize(3)
+draw_square(bob, 20)
+
+for i in range (4):
+    bob.penup()
+    bob.forward(40)
+    bob.pendown()
+    draw_square(bob, 20)
+
+wn.mainloop()
+
+Exercise 2 
+
+import turtle
+
+def draw_square(t, sz):
+
+     for i in range(4):
+        t.left(90)
+        t.forward(sz)
+
+wn = turtle.Screen()
+bob = turtle.Turtle()
+wn.bgcolor("lightblue")
+wn.title("Saurav is a function")
+bob.color("red")
+bob.shape("turtle")
+bob.pensize(3)
+
+size = 30
+
+for i in range(5):
+    draw_square(bob, size)
+    bob.penup()
+    bob.forward(20)
+    bob.right(90)
+    bob.forward(20)
+    bob.left(90)
+    bob.pendown()
+    size = size + 40
+
+wn.mainloop()
+
+Exercise 3 
