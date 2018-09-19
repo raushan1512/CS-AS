@@ -147,21 +147,20 @@ def drawsquare(t,sz):
 wn = turtle.Screen()
 wn.bgcolor("light green")
 
-Choo = turtle.Turtle()
-Choo.color("magenta")
-Choo.pensize(3)
+Boblett = turtle.Turtle()
+Boblett.color("magenta")
+Bobkett.pensize(3)
 i = 0
 w = 1
 
 while i < 100:
     w = w + 4
-    drawsquare(Choo,w)
+    drawsquare(Boblett,w)
 
     i = i +1
 
 wn.mainloop()
 
-###############
 
 Exercise 6
 
@@ -175,13 +174,13 @@ def drawequilateral(t,sz):
 wn = turtle.Screen()
 wn.bgcolor("light green")
 
-Choo = turtle.Turtle()
-Choo.color("magenta")
-Choo.pensize(3)
+Alex = turtle.Turtle()
+Alex.color("magenta")
+Alex.pensize(3)
 i = 0
 
 while i < 2:
-    drawequilateral(Choo,40)
+    drawequilateral(Alex,40)
 
     i = i +1
 
@@ -217,17 +216,17 @@ def drawstar(t,sz):
 wn = turtle.Screen()
 wn.bgcolor("light green")
 
-Choo = turtle.Turtle()
-Choo.color("magenta")
-Choo.pensize(3)
+Piglet = turtle.Turtle()
+Piglet.color("magenta")
+Piglet.pensize(3)
 i = 0
 
 while i < 5:
-    drawstar(Choo,40)
-    Choo.penup()
-    Choo.forward(350)
-    Choo.right(144)
-    Choo.pendown()
+    drawstar(Piglet,40)
+    Piglet.penup()
+    Piglet.forward(350)
+    Piglet.right(144)
+    Piglet.pendown()
     i = i +1
 
 wn.mainloop()
