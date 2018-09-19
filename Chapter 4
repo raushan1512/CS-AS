@@ -80,3 +80,155 @@ for i in range(5):
 wn.mainloop()
 
 Exercise 3 
+
+
+import turtle
+x = 0
+n = int(input("Please enter the number of sides"))
+angle = (180*(n-2))/n
+x = int(angle)
+
+def drawpoly(t,n,sz):
+    t.forward(sz)
+    t.right(n)
+
+wn = turtle.Screen()
+wn.bgcolor("light green")
+
+Choo = turtle.Turtle()
+Choo.color("pink")
+Choo.pensize(3)
+i = 0
+
+while i < x:
+    drawpoly(Choo,angle,50)
+
+    i = i +1
+
+wn.mainloop()
+
+
+Exercise 4
+
+import turtle
+
+def drawsquare(t,sz):
+    for i in range(4):
+        t.forward(sz)
+        t.right(90)
+
+wn = turtle.Screen()
+wn.bgcolor("light green")
+
+Choo = turtle.Turtle()
+Choo.color("pink")
+Choo.pensize(3)
+i = 0
+
+while i < 20:
+    drawsquare(Choo,50)
+    Choo.penup()
+    Choo.right(18)
+    Choo.pendown()
+    i = i +1
+
+wn.mainloop()
+
+Exercise 5
+
+import turtle
+
+def drawsquare(t,sz):
+    for i in range(1):
+        t.forward(sz)
+        t.right(92)
+        # Make it 90 / 92
+
+wn = turtle.Screen()
+wn.bgcolor("light green")
+
+Choo = turtle.Turtle()
+Choo.color("magenta")
+Choo.pensize(3)
+i = 0
+w = 1
+
+while i < 100:
+    w = w + 4
+    drawsquare(Choo,w)
+
+    i = i +1
+
+wn.mainloop()
+
+###############
+
+Exercise 6
+
+import turtle
+
+def drawequilateral(t,sz):
+    for i in range(3):
+        t.forward(sz)
+        t.right(120)
+
+wn = turtle.Screen()
+wn.bgcolor("light green")
+
+Choo = turtle.Turtle()
+Choo.color("magenta")
+Choo.pensize(3)
+i = 0
+
+while i < 2:
+    drawequilateral(Choo,40)
+
+    i = i +1
+
+wn.mainloop()
+
+Exercise 7
+
+n = input("Please enter the maximum number")
+i = 1
+total = 0
+while i < n:
+    total = total + i
+
+Exercise 8
+
+import math
+
+sz = input("Please enter radius")
+def areacirc(sz):
+    square = sz * sz
+    p = math.pi
+    area = p*square
+
+Exercise 9/10
+
+import turtle
+
+def drawstar(t,sz):
+    for i in range(5):
+        t.forward(sz)
+        t.right(144)
+
+wn = turtle.Screen()
+wn.bgcolor("light green")
+
+Choo = turtle.Turtle()
+Choo.color("magenta")
+Choo.pensize(3)
+i = 0
+
+while i < 5:
+    drawstar(Choo,40)
+    Choo.penup()
+    Choo.forward(350)
+    Choo.right(144)
+    Choo.pendown()
+    i = i +1
+
+wn.mainloop()
+
