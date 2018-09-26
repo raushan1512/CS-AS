@@ -1,1 +1,266 @@
 Exercise 1 
+
+check = -1
+count = 0
+Day = [0,1,2,3,4,5,6]
+DayWord = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
+a = int(input("Please enter day number"))
+a = a -1
+while check == -1:
+    b = Day[count]
+    if a == b:
+        check = int(a)
+    count = count + 1
+print (DayWord[check])
+
+
+Exercise 2 
+
+a = int(input("Day leaving"))
+b = int(input("Length of stay"))
+b = b % 7
+b = (b + a)%7
+for i in (0,6,1):
+    j = Day[i]
+    if j == b:
+        print (DayWord[i])
+
+
+
+
+Exercise 3
+
+#a <= b
+#a < b
+#a< 18 and day != 3
+#a<18 and day == 3
+
+
+
+
+Exercise 4
+
+#True
+#False
+#False
+#True
+
+
+
+
+Exercise 5
+
+#T
+#T
+#T
+#T
+#T
+#T
+#F
+#T
+
+
+
+
+Exercise 6
+
+a = int(input("Please enter the mark"))
+if a < 40:
+    print ("F3")
+elif a >= 40 and a < 45:
+    print ("F2")
+elif a >= 45 and a < 50:
+    print ("F1 Supp")
+elif a >= 50 and a < 60:
+    print ("Third")
+elif a >= 60 and a < 70:
+    print ("Second")
+elif a >= 70 and a < 75:
+    print ("Upper Second")
+elif a >= 75 and a <= 100:
+    print ("First")
+else:
+    print ("Error")
+
+
+
+
+Exercise 7
+
+import turtle
+
+def draw_bar(t, height):
+
+    t.begin_fill()
+    t.left(90)
+    t.forward(height)
+    t.write("  "+ str(height))
+    t.right(90)
+    t.forward(40)
+    t.right(90)
+    t.forward(height)
+    t.left(90)
+    t.end_fill()
+    t.penup()
+    t.forward(10)
+    t.pendown()
+
+wn = turtle.Screen()         # Set up the window and its attributes
+wn.bgcolor("lightgreen")
+
+tess = turtle.Turtle()       # Create tess and set some attributes
+tess.color("blue", "red")
+tess.pensize(3)
+
+xs = [48,117,200,240,160,260,220]
+
+for a in xs:
+    draw_bar(tess, a)
+
+wn.mainloop()
+
+
+
+
+Exercise 8
+
+import turtle
+
+def draw_bar(t, height):
+
+
+    t.begin_fill()
+    t.left(90)
+    t.forward(height)
+    t.write("  "+ str(height))
+    t.right(90)
+    t.forward(40)
+    t.right(90)
+    t.forward(height)
+    t.left(90)
+    t.end_fill()
+    t.penup()
+    t.forward(10)
+    t.pendown()
+
+wn = turtle.Screen()         # Set up the window and its attributes
+wn.bgcolor("lightgreen")
+
+xs = [48,117,200,240,160,260,220]
+tess = turtle.Turtle()       # Create tess and set some attributes
+tess.pensize(3)
+
+x = "red"
+
+for a in xs:
+    if a >= 200:
+        x = "red"
+    elif a >= 100 and a < 200:
+        x = "yellow"
+    else:
+        x = "green"
+    tess.color("blue", x)
+    draw_bar(tess, a)
+
+wn.mainloop()
+
+
+
+
+Exercise 9
+
+import turtle
+
+def draw_barplus(t, height):
+
+    t.begin_fill()
+    t.left(90)
+    t.forward(height)
+    if height < 0:
+        t.penup()
+        t.forward(-12)
+        t.pendown()
+    t.write("  "+ str(height))
+    if height < 0:
+        t.penup()
+        t.forward(12)
+        t.pendown()
+    t.right(90)
+    t.forward(40)
+    t.right(90)
+    t.forward(height)
+    t.left(90)
+    t.end_fill()
+    t.penup()
+    t.forward(10)
+    t.pendown()
+
+wn = turtle.Screen()         # Set up the window and its attributes
+wn.bgcolor("lightgreen")
+
+xs = [48,-117,200,240,-160,-260,220]
+tess = turtle.Turtle()       # Create tess and set some attributes
+tess.pensize(3)
+
+x = "red"
+
+for a in xs:
+    if a >= 200:
+        x = "red"
+    elif a >= 100 and a < 200:
+        x = "yellow"
+    else:
+        x = "green"
+    tess.color("blue", x)
+
+    draw_barplus(tess, a)
+
+wn.mainloop()
+
+
+
+
+Exercise 10
+
+def findhypot(s1,s2):
+    a = float(s1**2 + s2**2)
+    print (a)
+
+
+s1 = int(input("Side 1"))
+s2 = int(input("Side 2"))
+
+for i in (0,3,1):
+    findhypot(s1,s2)
+
+
+Exercise 11
+
+big  = 0
+big2 = 0
+a = int(input("Enter side"))
+b = int(input("Enter side"))
+c = int(input("Enter side"))
+
+for a in (1,1,1):
+    if c > a and c > b:
+        big = c**2
+        big2 = a**2 + b**2
+    if b > a and b > c:
+        big = b**2
+        big2 = a**2 + c**2
+    if a > c and a > b:
+        big = a**2
+        big2 = c**2 + b**2
+
+
+for i in (0,3,1):
+
+
+    big = big
+    big2 = big2
+
+    if abs(big-big2) == 0:
+        print("The triangle is right angled")
+    else:
+        print ("Not a right angled triangle")
