@@ -30,34 +30,34 @@ for i in (0,6,1):
 
 Exercise 3
 
-#a <= b
-#a < b
-#a< 18 and day != 3
-#a<18 and day == 3
+a <= b
+a < b
+a< 18 and day != 3
+a<18 and day == 3
 
 
 
 
 Exercise 4
 
-#True
-#False
-#False
-#True
+True
+False
+False
+True
 
 
 
 
 Exercise 5
 
-#T
-#T
-#T
-#T
-#T
-#T
-#F
-#T
+True
+True
+True
+True
+True
+True
+False
+True
 
 
 
