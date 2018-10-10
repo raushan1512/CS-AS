@@ -16,15 +16,14 @@ print (DayWord[check])
 
 Exercise 2 
 
+Day = [0,1,2,3,4,5,6]
+DayWord = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
+
 a = int(input("Day leaving"))
 b = int(input("Length of stay"))
-b = b % 7
-b = (b + a)%7
-for i in (0,6,1):
-    j = Day[i]
-    if j == b:
-        print (DayWord[i])
-
+c = b % 7
+day_leaving = a + c
+print(DayWord[day_leaving])
 
 
 
