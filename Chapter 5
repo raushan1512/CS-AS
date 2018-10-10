@@ -60,29 +60,26 @@ True
 
 
 
-
 Exercise 6
 
-a = int(input("Please enter the mark"))
-if a < 40:
-    print ("F3")
-elif a >= 40 and a < 45:
-    print ("F2")
-elif a >= 45 and a < 50:
-    print ("F1 Supp")
-elif a >= 50 and a < 60:
-    print ("Third")
-elif a >= 60 and a < 70:
-    print ("Second")
-elif a >= 70 and a < 75:
-    print ("Upper Second")
-elif a >= 75 and a <= 100:
-    print ("First")
-else:
-    print ("Error")
-
-
-
+xs = [83, 75, 74.9, 70, 69.9, 65, 60, 59.9, 55, 50, 49.9, 45, 44.9, 40, 39.9, 2, 0]
+for a in xs :
+    if a < 40:
+        print ("F3")
+    elif a >= 40 and a < 45:
+        print ("F2")
+    elif a >= 45 and a < 50:
+        print ("F1 Supp")
+    elif a >= 50 and a < 60:
+        print ("Third")
+    elif a >= 60 and a < 70:
+        print ("Second")
+    elif a >= 70 and a < 75:
+        print ("Upper Second")
+    elif a >= 75 and a <= 100:
+        print ("First")
+    else:
+        print ("Error")
 
 Exercise 7
 
@@ -104,14 +101,15 @@ def draw_bar(t, height):
     t.forward(10)
     t.pendown()
 
-wn = turtle.Screen()         # Set up the window and its attributes
+wn = turtle.Screen()        
 wn.bgcolor("lightgreen")
 
-tess = turtle.Turtle()       # Create tess and set some attributes
+tess = turtle.Turtle()      
 tess.color("blue", "red")
 tess.pensize(3)
+tess.speed(20)
 
-xs = [48,117,200,240,160,260,220]
+xs = [84,177,260,310,360,277,255]
 
 for a in xs:
     draw_bar(tess, a)
@@ -142,12 +140,13 @@ def draw_bar(t, height):
     t.forward(10)
     t.pendown()
 
-wn = turtle.Screen()         # Set up the window and its attributes
+wn = turtle.Screen()
 wn.bgcolor("lightgreen")
 
-xs = [48,117,200,240,160,260,220]
-tess = turtle.Turtle()       # Create tess and set some attributes
-tess.pensize(3)
+xs = [84,177,250,280,360,277,280]
+tess = turtle.Turtle()
+tess.pensize(0.3)
+tess.speed(20)
 
 x = "red"
 
@@ -162,8 +161,6 @@ for a in xs:
     draw_bar(tess, a)
 
 wn.mainloop()
-
-
 
 
 Exercise 9
@@ -194,12 +191,13 @@ def draw_barplus(t, height):
     t.forward(10)
     t.pendown()
 
-wn = turtle.Screen()         # Set up the window and its attributes
+wn = turtle.Screen()       
 wn.bgcolor("lightgreen")
 
 xs = [48,-117,200,240,-160,-260,220]
-tess = turtle.Turtle()       # Create tess and set some attributes
-tess.pensize(3)
+tess = turtle.Turtle()      
+tess.pensize(0.3)
+tess.speed(20)
 
 x = "red"
 
@@ -215,9 +213,6 @@ for a in xs:
     draw_barplus(tess, a)
 
 wn.mainloop()
-
-
-
 
 Exercise 10
 
@@ -252,9 +247,7 @@ for a in (1,1,1):
         big = a**2
         big2 = c**2 + b**2
 
-
 for i in (0,3,1):
-
 
     big = big
     big2 = big2
