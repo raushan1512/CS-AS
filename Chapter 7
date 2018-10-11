@@ -1,1 +1,199 @@
-i cba
+Exercise 1
+
+List = [1,2,3,4,5,6,7,8,9]
+def odd(x):
+    count = 0
+    for i in range(0,x,1):
+        if List[i]%2 == 1:
+            count = count + 1
+    print(count)
+a = int(len(List))
+odd(a)
+
+# 2
+
+List = [1,2,3,4,5,6,7,8,9]
+def sumeven(x):
+    count = 0
+    for i in range(0,x,1):
+        if List[i]%2 == 0:
+            count += List[i]
+    print(count)
+a = int(len(List))
+sumeven(a)
+
+# 3
+
+List = [-1,2,-3,4,5,-6,7,8,9]
+def negative(x):
+    count = 0
+    for i in range(0,x,1):
+        if List[i] < 0:
+            count += List[i]
+    print(count)
+a = int(len(List))
+negative(a)
+
+# 4
+
+List = ['happy','rainbow','candy','ansh','babaye']
+def length(x):
+    count = 0
+    for i in range(0,x,1):
+        if len(List[i])==5:
+            count += 1
+    print(count)
+a = int(len(List))
+length(a)
+
+# 5
+
+List = [1,2,3,4,5,6,7,8,9]
+def untileven(x):
+    count = 0
+    for i in range(0,x,1):
+        if List[i]%2 == 0:
+            break
+        count += List[i]
+    print(count)
+a = int(len(List))
+untileven(a)
+
+# 6
+
+List = ['happy','rainbow','candy','ansh','sam','babaye']
+def untilsam(x):
+    count = 0
+    for i in range(0,x,1):
+        if List[i] == 'sam':
+            count += 1
+            break
+        count += 1
+    print(count)
+a = int(len(List))
+untilsam(a)
+
+# 7
+
+num = 25
+
+def sqrt(x):
+    y = x*0.1
+    w = y **2
+    while x - w > 0.001:
+        w = y **2
+        if w < x:
+            y = y + 0.1
+        else:
+            y = y -1
+        print("better")
+
+    print(y)
+
+sqrt(num)
+
+# 9
+
+def triang(n):
+    a = 0
+    for i in range(1,n+1,1):
+        a = a + i
+        print(a)
+
+triang(5)
+
+# 10
+
+def prime(n):
+    count = 0
+    for i in range(2,n,1):
+        if n % i == 0:
+            count = count+1
+    if count == 0:
+        print("True")
+    else:
+        print("False")
+
+prime(9)
+
+# 11
+
+List =  [(160, 20), (-43, 10), (270, 8), (-43, 12)]
+import turtle
+a = turtle.Screen()
+b = turtle.Turtle()
+b.pendown()
+
+for (i,j) in List:
+    b.left(i)
+    b.forward(j)
+
+a.exitonclick()
+
+# 12
+
+import turtle
+
+window = turtle.Screen()
+nicole = turtle.Turtle()
+nicole.pensize(6)
+nicole.pendown()
+nicole.forward(30)
+nicole.right(-90)
+nicole.forward(30)
+nicole.right(-135)
+nicole.forward((1800**0.5))
+nicole.right(135)
+nicole.forward(30)
+nicole.right(53.13024)
+nicole.forward(20)
+nicole.right(73.73952)
+nicole.forward(20)
+nicole.right(143.13024)
+nicole.forward(30)
+nicole.left(135)
+nicole.forward((1800**0.5))
+window.exitonclick()
+
+# 13
+
+#YES,YES,NO, NO, YES, NO
+
+# 14
+
+def num_digits(n):
+    count = 0
+    if n == 0:
+        print(1)
+    else:
+        while n != 0:
+            count = count + 1
+            n = n // 10
+        print ( count )
+
+num_digits(0)
+
+# 15
+
+def even(x):
+    string = str(x)
+    count = 0
+    for i in range(0,len(string),1):
+        check = string[i:i+1]
+        check = int(check)
+        if check % 2 == 0:
+            count += 1
+    print(count)
+
+even(12345680)
+
+# 16
+
+List =[2,4,5]
+def sum(L):
+    total = 0
+    for i in L:
+        total += (i**2)
+    print(total)
+
+sum(List)
