@@ -1,70 +1,70 @@
 Exercise 1
 
 List = [1,2,3,4,5,6,7,8,9]
-def odd(x):
+def odd(a):
     count = 0
-    for i in range(0,x,1):
+    for i in range(0,a,1):
         if List[i]%2 == 1:
             count = count + 1
     print(count)
-a = int(len(List))
-odd(a)
+b = int(len(List))
+odd(b)
 
-# 2
+Exercise 2
 
 List = [1,2,3,4,5,6,7,8,9]
-def sumeven(x):
+def sumeven(a):
     count = 0
-    for i in range(0,x,1):
+    for i in range(0,a,1):
         if List[i]%2 == 0:
             count += List[i]
     print(count)
-a = int(len(List))
-sumeven(a)
+b = int(len(List))
+sumeven(b)
 
-# 3
+Exercise 3
 
 List = [-1,2,-3,4,5,-6,7,8,9]
-def negative(x):
+def negative(a):
     count = 0
-    for i in range(0,x,1):
+    for i in range(0,a,1):
         if List[i] < 0:
             count += List[i]
     print(count)
-a = int(len(List))
-negative(a)
+b = int(len(List))
+negative(b)
 
-# 4
+Exercise 4
 
-List = ['happy','rainbow','candy','ansh','babaye']
-def length(x):
+List = ['some','body','once','told','me','the','world']
+def length(a):
     count = 0
-    for i in range(0,x,1):
+    for i in range(0,a,1):
         if len(List[i])==5:
             count += 1
     print(count)
-a = int(len(List))
-length(a)
+b = int(len(List))
+length(b)
 
-# 5
+Exercise 5
 
 List = [1,2,3,4,5,6,7,8,9]
-def untileven(x):
+def untileven(a):
     count = 0
-    for i in range(0,x,1):
+    for i in range(0,a,1):
         if List[i]%2 == 0:
             break
         count += List[i]
     print(count)
-a = int(len(List))
-untileven(a)
+b = int(len(List))
+untileven(b)
 
-# 6
+Exercise 6
 
-List = ['happy','rainbow','candy','ansh','sam','babaye']
-def untilsam(x):
+List = ['some','body','once','told','me','the','world']
+def untilsam(a):
     count = 0
-    for i in range(0,x,1):
+    for i in range(0,a,1):
         if List[i] == 'sam':
             count += 1
             break
@@ -73,7 +73,7 @@ def untilsam(x):
 a = int(len(List))
 untilsam(a)
 
-# 7
+Exercise 7
 
 num = 25
 
@@ -92,7 +92,7 @@ def sqrt(x):
 
 sqrt(num)
 
-# 9
+Exercise 9
 
 def triang(n):
     a = 0
@@ -102,7 +102,7 @@ def triang(n):
 
 triang(5)
 
-# 10
+Exercise 10
 
 def prime(n):
     count = 0
@@ -116,13 +116,14 @@ def prime(n):
 
 prime(9)
 
-# 11
+Exercise 11
 
 List =  [(160, 20), (-43, 10), (270, 8), (-43, 12)]
 import turtle
 a = turtle.Screen()
 b = turtle.Turtle()
 b.pendown()
+b.speed(20)
 
 for (i,j) in List:
     b.left(i)
@@ -130,36 +131,41 @@ for (i,j) in List:
 
 a.exitonclick()
 
-# 12
+Exercise 12
 
 import turtle
 
 window = turtle.Screen()
-nicole = turtle.Turtle()
-nicole.pensize(6)
-nicole.pendown()
-nicole.forward(30)
-nicole.right(-90)
-nicole.forward(30)
-nicole.right(-135)
-nicole.forward((1800**0.5))
-nicole.right(135)
-nicole.forward(30)
-nicole.right(53.13024)
-nicole.forward(20)
-nicole.right(73.73952)
-nicole.forward(20)
-nicole.right(143.13024)
-nicole.forward(30)
-nicole.left(135)
-nicole.forward((1800**0.5))
+ragod = turtle.Turtle()
+ragod.pensize(6)
+ragod.pendown()
+ragod.forward(30)
+ragod.right(-90)
+ragod.forward(30)
+ragod.right(-135)
+ragod.forward((1800**0.5))
+ragod.right(135)
+ragod.forward(30)
+ragod.right(53.13024)
+ragod.forward(20)
+ragod.right(73.73952)
+ragod.forward(20)
+ragod.right(143.13024)
+ragod.forward(30)
+ragod.left(135)
+ragod.forward((1800**0.5))
 window.exitonclick()
 
-# 13
+Exercise 13
 
-#YES,YES,NO, NO, YES, NO
+#YES,
+YES,
+NO, 
+NO, 
+YES, 
+NO
 
-# 14
+Exercise 14
 
 def num_digits(n):
     count = 0
@@ -173,7 +179,7 @@ def num_digits(n):
 
 num_digits(0)
 
-# 15
+Exercise 15
 
 def even(x):
     string = str(x)
@@ -187,7 +193,7 @@ def even(x):
 
 even(12345680)
 
-# 16
+Exercise 16
 
 List =[2,4,5]
 def sum(L):
