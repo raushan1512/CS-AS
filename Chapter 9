@@ -1,6 +1,16 @@
 Exercise 1
 
+tup = ("saurav","is","pretty","69")
 
+
+def about(t):
+    det = ""
+    for i in t:
+        det += i
+    return det
+
+
+print(about(tup))
 
 Exercise 2
 # A tuple is a generalisation of a pair
