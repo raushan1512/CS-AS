@@ -1,0 +1,73 @@
+import random
+import turtle
+rabeast = input("Please enter RAGOD for even and RABEAST for odd")
+
+ralist = []
+
+for i in range (8):
+    rabyte = ''
+    for x in range (7):
+        y = random.randint(0,1)
+        y = str(y)
+        rabyte += y
+
+    count = 0
+    check = 0
+
+    for i in rabyte :
+        if i == '1':
+            count += 1
+
+    string = ''
+    if rabeast == 'RAGOD'and count%2 == 0:
+        string += '0'
+        string += rabyte
+
+    elif rabeast == 'RAGOD'and count%2 == 1:
+        string += '1'
+        string += rabyte
+
+    elif rabeast == 'RABEAST'and count%2 == 0:
+        string += '1'
+        string += rabyte
+
+    elif rabeast == 'RABEAST'and count%2 == 1:
+        string += '0'
+        string += rabyte
+
+    ralist.append(string)
+
+
+print(ralist)
+
+ralist2 = []
+for i in ralist :
+    ralist3 = []
+    for j in i :
+        ralist3.append(j)
+    ralist2.append(ralist3)
+
+for i in ralist2:
+    print(i)
+
+print('________________________________________')
+
+ralist = []
+for i in range (8):
+
+    count = 0
+    for j in ralist2:
+        y = j[i]
+        if y =='1':
+            count += 1
+    if count % 2 == 0 and rabeast =='RAGOD':
+        ralist.append("0")
+    elif count % 2 == 1 and rabeast =='RAGOD':
+        ralist.append("1")
+    elif count % 2 == 0 and rabeast =='RABEAST':
+        ralist.append("1")
+    elif count % 2 == 1 and rabeast =='RABEAST':
+        ralist.append("0")
+
+print(ralist)
+
