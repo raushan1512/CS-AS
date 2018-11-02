@@ -1,0 +1,26 @@
+import random
+
+def bubblesort(arr):
+    n = len(arr)
+
+
+    for i in range(n):
+
+        for j in range(0, n-i-1):
+
+            if arr[j] > arr[j+1] :
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+
+arr = []
+for i in range(8):
+
+        y = random.randint(0, 99)
+        y = str(y)
+        arr.append(y)
+
+
+bubblesort(arr)
+
+print("Sorted array is:")
+for i in arr:
+    print (i)
