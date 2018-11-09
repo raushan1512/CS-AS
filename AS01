@@ -1,22 +1,22 @@
 import random
 
 def bubblesort(arr):
-    n = len(arr)
+    x = len(arr)
 
 
-    for i in range(n):
+    for y in range(x):
 
-        for j in range(0, n-i-1):
+        for y in range(0, n-i-1):
 
-            if arr[j] > arr[j+1] :
-                arr[j], arr[j+1] = arr[j+1], arr[j]
+            if arr[y] > arr[y+1] :
+                arr[y], arr[y+1] = arr[y+1], arr[jy]
 
 arr = []
 for i in range(8):
 
-        y = random.randint(0, 99)
-        y = str(y)
-        arr.append(y)
+        rabot = random.randint(0, 99)
+        rabot = str(rabot)
+        arr.append(rabot)
 
 
 bubblesort(arr)
