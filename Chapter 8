@@ -114,10 +114,10 @@ def check(string):
 EXERCISE 11
 
 def sub(string,sub):
-    w = len(sub)
+    x = len(sub)
     count = 0
-    for i in range(0,len(string)):
-        temp = string[i:i+w]
+    for j in range(0,len(string)):
+        temp = string[j:j+x]
         if temp == sub:
             count += 1
     return(count)
@@ -125,29 +125,29 @@ def sub(string,sub):
 
 EXERCISE 12
 
-def remove(substr, BigString):
-  location = BigString.find(substr)
+def remove(substr, LargeString):
+  location = LargeString.find(substr)
   if location < 0:
-    return BigString
-  finalStr = BigString[:location] + BigString[location+len(substr):]
+    return LargeString
+  finalStr = LargeString[:location] + LargeString[location+len(substr):]
   return finalStr
   
 
 EXERCISE 13
 
-def remove(substr, BigString):
-  location = BigString.find(substr)
+def remove(substr, LargeString):
+  location = LargeString.find(substr)
   if location < 0:
-    return BigString
-  finalStr = BigString[:location] + BigString[location+len(substr):]
+    return LargeString
+  finalStr = LargeString[:location] + LargeString[location+len(substr):]
   return finalStr
 
-def remove_all(substr, BigString):
-  x = BigString
+def remove_all(substr, Large String):
+  x = LargeString
   while x:
     if remove(substr,x) == x:
       return remove(substr,x)
     else:
       x = remove(substr,x)
 
-print(remove_all("iss", "Mississippi"))
+print(remove_all("an", "Banana"))
