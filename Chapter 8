@@ -5,7 +5,7 @@ y, g, 9, Myst, True, True, True, Error, Error
 
 EXERCISE 2
 
-prefixes = ['J','K','L','M','N','Ou','P','Qu']
+prefixes = ['J','L','B','Kn','Qu','P','Sn','T']
 suffix = "ack"
 
 for letter in prefixes:
@@ -30,7 +30,7 @@ def count_letters(word,letter):
 
 EXERCISE 5
 
-paragraph = "Usually we’d prefer to use the methods that Python provides rather than reinvent our own equivalents. But many of the built-in functions and methods make good teaching exercises, and the underlying techniques you learn are your building blocks to becoming a proficient programmer."
+paragraph = "Shoot all the blue jays you want, if you can hit 'em, but remember it's a sin to kill a mockingbird." That was the only time I ever heard Atticus say it was a sin to do something, and I asked Miss Maudie about it."
 paragraph = paragraph.lower()
 paragraph2 = ''
 alphabet = 'abcdefghijklmnopqrstuvwxyz '
@@ -45,21 +45,21 @@ for i in paragraph:
 
 count1 = 0
 count2 = 0
-echeck = 0
+xcheck = 0
 wordcheck = 0
 for i in paragraph2:
     if i != ' ':
         wordcheck = 1
-        if i == 'e':
-            echeck = 1
+        if i == 'x':
+            xcheck = 1
     if i == ' ':
         if wordcheck == 1:
             count1 += 1
-            if echeck == 1:
+            if xcheck == 1:
                 count2 += 1
-        echeck = 0
+        xcheck = 0
         wordcheck = 0
-        print("Your text contains" + count1 + "words, of which " + count2 + " contain an 'e'.")
+        print("Your text contains" + count1 + "words, of which " + count2 + " contain an 'x'.")
 
 
 EXERCISE 6
@@ -67,7 +67,7 @@ EXERCISE 6
 layout = "{0:>4}{1:>10}{2:>4}{3:>4}{4:>4}{5:>4}{6:>4}{7:>4}{8:>4}{9:>4}{10:>4}{11:>4}{12:>4}"
 
 print(layout.format("no.", "1", "2", "3", "4", "5", "6","7","8","9","10",'11','12'))
-print(': --------------------------------------------------------------')
+print(': ____________________________________________________________________ ')
 for i in range(1, 13):
     print(layout.format(str(i) + ':', i, (2*i), 3*i, 4*i, i*5, i*6, i*7, i*8, i*9, i*10,i*11,i*12))
 
@@ -94,10 +94,10 @@ def mirror(string):
 
 EXERCISE 9
 
-def remove(string,letter):
+def remove(string,alphabet):
     string2 = ''
     for i in string:
-        if i != letter:
+        if i != alphabet:
             string2 += i
 
 
@@ -143,11 +143,11 @@ def remove(substr, BigString):
   return finalStr
 
 def remove_all(substr, BigString):
-  a = BigString
-  while a:
-    if remove(substr,a) == a:
-      return remove(substr,a)
+  x = BigString
+  while x:
+    if remove(substr,x) == x:
+      return remove(substr,x)
     else:
-      a = remove(substr,a)
+      x = remove(substr,x)
 
 print(remove_all("iss", "Mississippi"))
