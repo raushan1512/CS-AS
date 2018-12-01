@@ -1,0 +1,58 @@
+EXERCISE 1 a)
+prints out a formatted calendar for the year 2012
+
+b)
+import calendar
+cal = calendar.TextCalendar(3)      # Create an instance
+cal.pryear(2012)                   # What happens here?
+
+c)
+mon = calendar.TextCalendar()
+mon.prmonth(2019, 1)
+
+d)
+d = calendar.LocaleTextCalendar(6, "SPANISH")
+d.pryear(2012)
+
+e)
+print(calendar.isleap(2012))
+print(calendar.isleap(2019))
+ boolean function which accepts the input of a year and returns True if the year is a leap year and False is the year is not
+
+
+EXERCISE 2a)
+49
+
+b)
+math.ceil(X)
+Return the ceiling of x as a float, the smallest integer value greater than or equal to x.
+
+math.floor(x)
+Return the floor of x as a float, the largest integer value less than or equal to x.
+
+d)
+e & π
+
+EXERCISE 3
+Inserts copies of each object within an old compound object into a new one. It is different from a shallow copy which inserts the same objects into a new compound, causing any changes in the original compound to too reflect in the new one
+
+EXERCISE 4
+import mymodule1
+import mymodule2
+
+print((mymodule2.myage - mymodule1.myage) == (mymodule2.year - mymodule1.year))
+True
+
+EXERCISE 5
+prints out "My name is __main__"
+2nd case
+
+EXERCISE 6
+"Namespaces are one honking great idea -- let's do more of those!"
+
+EXERCISE 7
+['If', 'we', 'took', 'the', 'bones', 'out,', 'it', "wouldn't", 'be', 'crunchy,', 'would', 'it?']
+<class 'list'>
+['If we t', '', 'k the b', 'nes ', 'ut, it w', "uldn't be crunchy, w", 'uld it?']
+['If we took the bones out, ', "t wouldn't be crunchy, would ", 't?']
+If we t00k the b0nes 0ut, it w0uldn't be crunchy, w0uld it?
