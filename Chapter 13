@@ -35,3 +35,64 @@ EXERCISE 3
 
 Write a program that reads a text file and produces an output file which is a copy of the file, except the first five columns of each line contain a four digit line number, followed by a space. Start numbering the first line in the output file at 1. Ensure that every line number is formatted to the same width in the output file. Use one of your Python programs as test data for this exercise: your output should be a printed and numbered listing of the Python program.
 
+myfile = open("test.txt", "w")
+myfile.write("My first snake written from Python\n")
+myfile.write("---------------------------------\n")
+myfile.write("Hello, snake!\n")
+myfile.close()
+List = []
+mynewhandle = open("test.txt", "r")
+while True:
+    theline = mynewhandle.readline()
+    if len(theline) == 0:
+        break
+    List.append(theline)
+mynewhandle.close()
+List2 = []
+for i in range(len(List)):
+    number = str(i)
+    while len(number) < 4:
+        number = '0' + number
+    number += ' '
+    d = List[i]
+    d = number + d
+    List2.append(d)
+myfile = open("test.txt", "w")
+x = len(List2)
+for j in range(0,x,1):
+    myfile.write(List2[j])
+myfile.close()
+
+e = open("test.txt",'r')
+for line in e:
+    print(line)
+    if len(line) == 0 :
+        break
+        
+        
+ Exercise 4  
+ Write a program that undoes the numbering of the previous exercise: it should read a file with numbered lines and produce another file without line numbers.
+ 
+ List = []
+mynewhandle = open("test.txt", "r")
+while True:
+    theline = mynewhandle.readline()
+    if len(theline) == 0:
+        break
+    List.append(theline)
+mynewhandle.close()
+List2 = []
+for i in range(len(List)):
+    d = List[i]
+    w = len(d)
+    f = d[5:w]
+    List2.append(f)
+myfile = open("test.txt", "w")
+x = len(List2)
+for j in range(0,x,1):
+    myfile.write(List2[j])
+myfile.close()
+
+e = open("test.txt",'r')
+for line in e :
+    print(line)
