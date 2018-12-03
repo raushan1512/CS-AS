@@ -1,0 +1,14 @@
+#EX 1
+
+print("hello, my name is bob saget.")
+
+
+#EX 2
+
+print((95*5)**2)
+
+
+#EX 3
+
+print(22/7)
+# 3.142857142857143
