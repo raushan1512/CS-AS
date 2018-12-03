@@ -1,1 +1,37 @@
-jhhh
+EXERCISE 1
+
+Write a program that reads a file and writes out a new file with the lines in reversed order (i.e. the first line in the old file becomes the last one in the new file.)
+
+myfile = open("test.txt", "w")
+myfile.write("My first file written from Python\n")
+myfile.write("---------------------------------\n")
+myfile.write("Hello, world!\n")
+myfile.close()
+
+f=open("test.txt",'r')
+for line in reversed(list(open("test.txt"))):
+    print(line.rstrip())
+
+EXERCISE 2 
+
+Write a program that reads a file and prints only those lines that contain the substring snake
+
+myfile = open("test.txt", "w")
+myfile.write("My first file written from snake\n")
+myfile.write("---------------------------------\n")
+myfile.write("Hello, snake!\n")
+myfile.close()
+
+f=open("test.txt",'r')
+
+while True:
+    theline = f.readline()
+    if len(theline) == 0:
+        break
+    if "snake" in theline:
+        print(theline)
+
+EXERCISE 3
+
+Write a program that reads a text file and produces an output file which is a copy of the file, except the first five columns of each line contain a four digit line number, followed by a space. Start numbering the first line in the output file at 1. Ensure that every line number is formatted to the same width in the output file. Use one of your Python programs as test data for this exercise: your output should be a printed and numbered listing of the Python program.
+
