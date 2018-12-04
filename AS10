@@ -1,1 +1,27 @@
-c
+import random
+
+words = ['haegwjzuvuyypxyu','krviroinpinio','rfcuidboivbcuewgf','cwohouwebcjibeoi','cvwdniobnqwwvwev''uicehiondcwiocbou','auicvhiowvhijhg','jhibcioubjbhuyfg','lkfuibecncljbiycgv']
+string = random.choice(words)
+print(string)
+vowels = 0
+
+for i in string:
+    if i == 'a' or i == 'i' or i == 'e' or i == 'o' or i == 'u':
+        vowels += 1
+
+check = 0
+check2 = 0
+for i in range(0,len(string)-1):
+    w = string[i:i+1]
+    x = string[i+1:i+2]
+    if w == x:
+        check = 1
+
+    if w+x == 'ab' or w+x == 'cd' or w+x == 'pq' or w+x == 'xy':
+        check2 = 1
+        break
+
+if check2 == 0 and check == 1 and vowels >= 3:
+    print("Nice")
+else:
+    print("Naughty")
