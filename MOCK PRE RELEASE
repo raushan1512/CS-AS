@@ -1,2 +1,39 @@
 Exercise 1 -- Pseudocode
 
+
+
+
+
+
+
+
+
+Exercise 2 -- Not Pseudocode
+
+def ralist():
+    monster_list = []
+    with open("test.txt") as rabot:
+        for line in rabot:
+            rapart = line.split(",")
+            monster_list.append(rapart[1])
+        del monster_list[0]
+        return monster_list
+
+print(ralist())
+
+Task 2
+
+Monster_Name = input("Please enter the name of your monster")
+def Monster(file):
+    count = 0
+    MonsterFile = open(file,"r")
+    while True:
+        text = MonsterFile.readline()
+        if len(text) == 0:
+            break
+        if Monster_Name == text :
+            print("MOnster Found In The Database",text)
+            count = 1
+    if count != 1:
+        print ("Monster Not Found In The Database")
+Monster("test.txt")
