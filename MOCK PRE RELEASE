@@ -32,8 +32,60 @@ def Monster(file):
         if len(text) == 0:
             break
         if Monster_Name == text :
-            print("MOnster Found In The Database",text)
+            print("Monster Found In The Database",text)
             count = 1
     if count != 1:
         print ("Monster Not Found In The Database")
 Monster("test.txt")
+
+Task 3
+
+def monster_stat():
+    while True:
+        MonsterNumber = input("Please enter a value between 1 & 30")
+        try :
+            Valid_Number = int(MonsterNumber)
+            if 0 < Valid_Number < 31 :
+                break
+            else :
+                print ( "Please enter a valid number between 1 & 30")
+
+        except :
+            print("Please enter an integer")
+
+    print("Number Entered",Valid_Number)
+    return MonsterNumber
+
+Name = input("Enter the name of your monster")
+Origin = input("Enter the origin of your monster")
+Description = input("Enter a description of your monster")
+print("Attack ")
+Attack = monster_stat()
+print("Magical Force")
+Magical_Force = monster_stat()
+print("Magical Defense")
+Magical_Defense = monster_stat()
+print("Defense")
+Defense= monster_stat()
+print("Intelligence")
+Intelligence = monster_stat()
+print("Health")
+Health = monster_stat()
+print("Experience")
+Experience = monster_stat()
+
+print("This is the Monster Card you have created")
+print("Name:",Name)
+print("Origin:",Origin)
+print("Description:",Description)
+print("Attack:",Attack)
+print("Magical Force:",Magical_Force)
+print("Magical Defense:",Magical_Defense)
+print("Defense:", Defense)
+print("Intelligence:", Intelligence)
+print("Health:", Health)
+print("Experience:", Experience)
+
+
+Task 4 
+
