@@ -1,12 +1,13 @@
 Exercise 1 -- Pseudocode
 
-
-
-
-
-
-
-
+namelist ← []
+monsterfile ← OPEN monster.txt to read
+FOR line IN monsterfile
+    item ← split at every comma ","
+    add the second value of "item" to "namelist"
+delete the first item in namelist
+FOR i IN namelist
+    OUTPUT i
 
 Exercise 2 -- Not Pseudocode
 
@@ -89,26 +90,32 @@ print("Experience:", Experience)
 
 Task 4 
 
-# 1
-# g
+1)
+g
 
-# 2
-# 21
+2)
+21
 
-# 3
-# 32
+3)
+32
 
-# 4
-# natiT
+4)
 
-# 5
-# SUBSTR(IDE,1,10)
-# SUBSTR(IDE,12,22)
-# ONECHAR(IDE,1) & ONECHAR(IDE,12) & ONECHAR(IDE,24)
+natiT
 
-# 6
-# 2
-# 136
+5)
 
-# 7
-# "The answer is: 42"
+SUBSTR(IDE,1,10)
+
+SUBSTR(IDE,12,22)
+
+ONECHAR(IDE,1) & ONECHAR(IDE,12) & ONECHAR(IDE,24)
+
+6)
+
+2
+
+136
+
+7)
+"The answer is: 42"
