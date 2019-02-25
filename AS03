@@ -1,0 +1,8 @@
+s = str(input("Please enter string"))
+leng = len(s)
+leng -= 1
+string2 = ''
+for i in range(leng,-1,-1):
+    stringtemp = s[i]
+    string2 += stringtemp
+print(string2)
