@@ -1,0 +1,14 @@
+vowelcount = 0
+s = str(input("Please enter lowercase string"))
+w = len(s)
+print(w)
+counter = 0
+
+while counter < w:
+    char = s[counter:counter + 1]
+    print (char)
+    if char == 'a' or char == 'i' or char == 'e' or char == 'o' or char == 'u':
+        vowelcount = vowelcount + 1
+    counter = counter + 1
+
+print(vowelcount)
