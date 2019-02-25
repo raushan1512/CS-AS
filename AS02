@@ -1,0 +1,11 @@
+List = [1,2,3,4,5,6,7,8,9,0]
+# search for 5
+check = 0
+a = int(input("Is this in the List: "))
+for i in List:
+    if i == a:
+        print("Found")
+        check = 1
+
+if check == 0:
+    print("Not Found")
